@@ -20,8 +20,7 @@ export default defineComponent({
   },
   methods: {
     getCurrentWeather() {
-      axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${this.city}&units=imperial&appid=${this.APIkey}`)
-    .then(res) => {
+      axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${this.city}&units=imperial&appid=${this.APIkey}`).then(res) => {
       console.log(res.data)
     }
   }
